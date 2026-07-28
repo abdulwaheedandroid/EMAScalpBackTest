@@ -1,99 +1,71 @@
-# ===========================
-# Python
-# ===========================
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual Environment
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
 
-# Distribution / Packaging
+# Build and packaging
 build/
 dist/
 *.egg-info/
 .eggs/
 
-# ===========================
-# IDEs
-# ===========================
+# IDE settings
 .vscode/
 .idea/
 .cursor/
 
-# ===========================
-# Operating System
-# ===========================
+# Operating system files
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ===========================
-# Environment Variables
-# ===========================
+# Secrets and environment variables
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.crt
 
-# ===========================
+# Local/private configuration
+local_settings.py
+config.local.py
+secrets.py
+
 # Logs
-# ===========================
 *.log
 logs/
 
-# ===========================
-# Python Testing
-# ===========================
+# Test and analysis caches
 .pytest_cache/
 .coverage
 htmlcov/
 .mypy_cache/
 .ruff_cache/
 
-# ===========================
 # Jupyter
-# ===========================
 .ipynb_checkpoints/
 
-# ===========================
-# Generated Reports
-# ===========================
+# Downloaded market data
+data/*.csv
+data/*.parquet
+data/*.json
+!data/.gitkeep
+
+# Generated reports
 reports/*.csv
 reports/*.xlsx
 reports/*.png
 reports/*.pdf
-
-# Keep the reports folder
 !reports/.gitkeep
 
-# ===========================
-# Downloaded Market Data
-# ===========================
-data/*.csv
-data/*.parquet
-data/*.json
-
-# Keep the data folder
-!data/.gitkeep
-
-# ===========================
-# Temporary Files
-# ===========================
+# Temporary files
 *.tmp
 *.bak
 *.swp
-
-# ===========================
-# Secrets
-# ===========================
-*.pem
-*.key
-*.crt
-
-# ===========================
-# Local Configuration
-# ===========================
-local_settings.py
