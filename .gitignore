@@ -1,0 +1,99 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===========================
+# IDEs
+# ===========================
+.vscode/
+.idea/
+.cursor/
+
+# ===========================
+# Operating System
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.*
+!.env.example
+
+# ===========================
+# Logs
+# ===========================
+*.log
+logs/
+
+# ===========================
+# Python Testing
+# ===========================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ===========================
+# Jupyter
+# ===========================
+.ipynb_checkpoints/
+
+# ===========================
+# Generated Reports
+# ===========================
+reports/*.csv
+reports/*.xlsx
+reports/*.png
+reports/*.pdf
+
+# Keep the reports folder
+!reports/.gitkeep
+
+# ===========================
+# Downloaded Market Data
+# ===========================
+data/*.csv
+data/*.parquet
+data/*.json
+
+# Keep the data folder
+!data/.gitkeep
+
+# ===========================
+# Temporary Files
+# ===========================
+*.tmp
+*.bak
+*.swp
+
+# ===========================
+# Secrets
+# ===========================
+*.pem
+*.key
+*.crt
+
+# ===========================
+# Local Configuration
+# ===========================
+local_settings.py
