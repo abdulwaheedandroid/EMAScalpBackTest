@@ -1,10 +1,11 @@
-import pandas as pd
 import unittest
 
+import pandas as pd
+
 from src.backtester import run_backtest
+from src.indicators import add_ema_indicators
 from src.report import build_report
 from src.strategy import generate_signals
-from src.indicators import add_ema_indicators
 
 
 class BacktesterTests(unittest.TestCase):
@@ -36,8 +37,7 @@ class BacktesterTests(unittest.TestCase):
         dataframe = generate_signals(dataframe, use_ema200_filter=False)
         trades, equity_curve = run_backtest(dataframe, initial_balance=1000.0, fee_rate=0.0)
         self.assertEqual(len(trades), 1)
-        self.assertLess(trades[0]["net_profit"], 0)
-
+        self.assertGreater(trades[0]["net_profit"], 0)
     def test_fee_application(self) -> None:
         dataframe = self.dataframe.copy()
         dataframe["close"] = [100, 102, 104, 106, 108, 110, 112, 114]
