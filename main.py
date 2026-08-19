@@ -1,3 +1,4 @@
+import logging
 from pathlib import Path
 
 import pandas as pd
@@ -22,6 +23,7 @@ from src.strategy import generate_signals
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
     dataframe = load_or_download_data(
         symbol=SYMBOL,
         interval=INTERVAL,

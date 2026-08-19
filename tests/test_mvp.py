@@ -66,6 +66,11 @@ class TestMVP(unittest.TestCase):
 
         self.assertEqual(
             trades[0]["entry_time"],
+            dataframe["open_time"].iloc[2],
+        )
+
+        self.assertEqual(
+            trades[0]["signal_time"],
             dataframe["open_time"].iloc[1],
         )
 
